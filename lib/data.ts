@@ -8,7 +8,7 @@ import arceaPhantasyImg from "@/public/arceaPhantasy.png";
 import wclinicsImg from "@/public/wclinics.png";
 import VanMLImg from "@/public/VanML.jpg";
 import relationshipHappinessImg from "@/public/relationshipHappiness.png";
-
+import jobScamDetectorImg from "@/public/jobScamDetector.png";
 
 export const links = [
   {
@@ -90,7 +90,14 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Wellbot - Fitness web application",
+    title: "Job Scam Detector - Flask AI Web Application",
+    description:
+      "A web application that uses AI to detect job scams by analyzing job descriptions and providing a scam score, helping users identify potential scams.",
+    tags: ["Python", "Flask", "HTML", "CSS", "JavaScript", "Git"],
+    imageUrl: jobScamDetectorImg,
+  },
+  {
+    title: "Wellbot - Fitness Web Application",
     description:
       "A fitness web application for generating workouts, customizing workouts, and tracking macros to enhance fitness tracking accuracy.",
     tags: ["EJS", "CSS", "MongoDB", "JavaScript", "Git", "Bootstrap"],
@@ -168,4 +175,10 @@ export const skillsData = [
   "MkDocs",
   "Markdown",
   "Command Line",
+  "Flask",
+  "Pandas",
+  "NumPy",
+  "PyTorch",
+  "Scikit-learn",
+  "TensorFlow",
 ] as const;
