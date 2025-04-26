@@ -7,7 +7,7 @@ import Image, {StaticImageData} from "next/image";
 type ProjectProps = {
   title: string;
   description: string;
-  tags: string[];
+  tags: readonly string[];
   imageUrl: StaticImageData; // StaticImageData is a type that represents the image data for the imageUrl prop
   url?: string; // optional url prop for the project
 };
