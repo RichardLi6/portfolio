@@ -1,15 +1,14 @@
 'use client';
 
-import { projectsData } from "@/lib/data";
 import { motion, useScroll, useTransform} from "framer-motion";
 import { useRef } from "react";
-import Image from "next/image";
+import Image, {StaticImageData} from "next/image";
 
 type ProjectProps = {
   title: string;
   description: string;
   tags: string[];
-  imageUrl: any; // imageUrl is of type any because it can be a string or an object depending on the image source
+  imageUrl: StaticImageData; // StaticImageData is a type that represents the image data for the imageUrl prop
   url?: string; // optional url prop for the project
 };
 // ProjectProps data type is defined as the type of the elements in the projectsData array (which are each of the projects)
