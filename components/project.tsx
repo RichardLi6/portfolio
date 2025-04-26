@@ -9,7 +9,7 @@ type ProjectProps = (typeof projectsData)[number]
 // ProjectProps data type is defined as the type of the elements in the projectsData array (which are each of the projects)
 // numbers represent the index of the projectsData array. it loops through each project in the array and assigns the type of each project to the ProjectProps type.
 
-export default function Project({ title, description, tags, imageUrl }: ProjectProps) {
+export default function Project({ title, description, tags, imageUrl, url}: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -40,19 +40,37 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
           ))}
         </ul>
       </div>
-      <Image src={imageUrl} alt="Project I worked on" quality={95} className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition
-        group-hover:scale-[1.04]
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2 
+      {url ? (
+        <a href={url} target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-10" >
+          <Image src={imageUrl} alt="Project I worked on" quality={95} className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition
+            group-hover:scale-[1.04]
+            group-hover:-translate-x-3
+            group-hover:translate-y-3
+            group-hover:-rotate-2 
 
-        group-even:group-hover:translate-x-3
-        group-even:group-hover:translate-y-3
-        group-even:group-hover:rotate-2
+            group-even:group-hover:translate-x-3
+            group-even:group-hover:translate-y-3
+            group-even:group-hover:rotate-2
 
-        group-even:-right-[initial] 
-        group-even:-left-40"
+            group-even:-right-[initial] 
+            group-even:-left-40"
+          />
+      </a> 
+      ): (
+        <Image src={imageUrl} alt="Project I worked on" quality={95} className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition
+          group-hover:scale-[1.04]
+          group-hover:-translate-x-3
+          group-hover:translate-y-3
+          group-hover:-rotate-2 
+
+          group-even:group-hover:translate-x-3
+          group-even:group-hover:translate-y-3
+          group-even:group-hover:rotate-2
+
+          group-even:-right-[initial] 
+          group-even:-left-40"
       />
+      )}
     </section>
     </motion.div>
   );

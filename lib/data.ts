@@ -9,6 +9,7 @@ import wclinicsImg from "@/public/wclinics.png";
 import VanMLImg from "@/public/VanML.jpg";
 import relationshipHappinessImg from "@/public/relationshipHappiness.png";
 import jobScamDetectorImg from "@/public/jobScamDetector.png";
+import { url } from "inspector";
 
 export const links = [
   {
@@ -37,7 +38,7 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
+export const experiencesData = [  
   {
     title: "Diploma - Computer Systems Technology",
     location: "BCIT | Vancouver, BC",
@@ -95,6 +96,7 @@ export const projectsData = [
       "A web application that uses AI to detect job scams by analyzing job descriptions and providing a scam score, helping users identify potential scams.",
     tags: ["Python", "Flask", "HTML", "CSS", "JavaScript", "Git"],
     imageUrl: jobScamDetectorImg,
+    url: "https://job-scam-detector-sw83m.ondigitalocean.app/",
   },
   {
     title: "Wellbot - Fitness Web Application",
@@ -102,6 +104,7 @@ export const projectsData = [
       "A fitness web application for generating workouts, customizing workouts, and tracking macros to enhance fitness tracking accuracy.",
     tags: ["EJS", "CSS", "MongoDB", "JavaScript", "Git", "Bootstrap"],
     imageUrl: wellbotImg,
+    url: "https://wellbot.onrender.com/",
   },
   {
     title: "UsingCommandLine",
@@ -109,6 +112,7 @@ export const projectsData = [
       "A comprehensive guide on how to use the command line, including basic commands, file management, and more.",
     tags: ["MkDocs", "Markdown", "Git", "Command Line"],
     imageUrl: commandlineImg,
+    url: "https://richardli6.github.io/UsingCommandLine/",
   },
   {
     title: "Sustainable Recipes",
@@ -116,6 +120,7 @@ export const projectsData = [
       " A web app for generated recipes through API based on available ingredients.",
     tags: ["HTML", "CSS", "JavaScript", "Node.js", "Firebase"],
     imageUrl: sustainablerecipesImg,
+    url: "https://sustainablerecipes-50334.web.app/",
   },
   {
     title: "Arcea Phantasy - Python Game Program",
@@ -123,6 +128,7 @@ export const projectsData = [
       "A text-based RPG game using Python, where players can explore a fantasy world, battle monsters, use skills, and level up.",
     tags: ["Python"],
     imageUrl: arceaPhantasyImg,
+    url: "https://github.com/RichardLi6/COMP-1510-Term-Project-Arcea-Phantasy-",
   },
   {
     title: "W-Clinics Health Web Application",
@@ -130,6 +136,7 @@ export const projectsData = [
       "Developed a web application that allows users to book appointments, view their medical history, and find nearby walk-in clinics.",
     tags: ["HTML", "CSS", "JavaScript", "Firebase", "Git", "Bootstrap"],
     imageUrl: wclinicsImg,
+    url: "https://comp-1800-dtc02.web.app/",
   },
   {
     title: "VanML Data Science Hackathon",
@@ -144,6 +151,7 @@ export const projectsData = [
       "Analyzed the link between relationship status and happiness during COVID-19; presented the findings at the Canadian Human Connection conference, highlighting strategies to enhance happiness.",
     tags: ["R"],
     imageUrl: relationshipHappinessImg,
+    url: "https://youtu.be/qfaaHZxe1Dk?si=J8C5Ob69nybaHH7q&t=515/",
   },
   
 ] as const; 
