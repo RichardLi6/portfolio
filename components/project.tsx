@@ -5,7 +5,13 @@ import { motion, useScroll, useTransform} from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
 
-type ProjectProps = (typeof projectsData)[number]
+type ProjectProps = {
+  title: string;
+  description: string;
+  tags: string[];
+  imageUrl: any; // imageUrl is of type any because it can be a string or an object depending on the image source
+  url?: string; // optional url prop for the project
+};
 // ProjectProps data type is defined as the type of the elements in the projectsData array (which are each of the projects)
 // numbers represent the index of the projectsData array. it loops through each project in the array and assigns the type of each project to the ProjectProps type.
 
