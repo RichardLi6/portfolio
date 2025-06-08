@@ -32,8 +32,7 @@ export default function About() {
         <span className="font-medium">
           Python, Javascript, and MongoDB
         </span>, but I am also familiar with Java, React, and SQL. I am continuously expanding my skill set and am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a  <span className="font-medium"> software
-        developer. </span>
+        <span className="font-medium"> position</span> working with data or new technology as a <span className="font-medium"> data analyst, data scientist, or software developer. </span>
         </p>
 
       <p>
