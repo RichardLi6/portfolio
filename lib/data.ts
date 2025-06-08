@@ -43,9 +43,9 @@ export const experiencesData = [
     title: "Diploma - Computer Systems Technology",
     location: "BCIT | Vancouver, BC",
     description:
-      "I'm a student at BCIT studying Computer Systems Technology. I'm learning about software development, databases, networking and more.",
+      "I graduated from BCIT studying Computer Systems Technology. I learned about programming, software development, databases, networking, machine learning and much more.",
     icon: React.createElement(LuGraduationCap), // React.createElement is used to render the icon rather than do use jsx <LuGraduationCap /> in tsx files
-    date: "Sept 2023 - present",
+    date: "Sept 2023 - May 2025",
   },
   {
     title: "Online Data Analyst",
@@ -72,7 +72,7 @@ export const experiencesData = [
     date: "Jan - Apr 2021",
   },
   {
-    title: "Team Member/Researcher",
+    title: "Data Analyst/Researcher",
     location: "Pivot 2020 | Canada",
     description:
       "I contributed to Pivot 2020 by gathering and analyzing data on Canadian cities to help develop a youth-focused data hub",
